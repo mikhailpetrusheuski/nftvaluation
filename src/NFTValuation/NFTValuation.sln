@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{322C1098-0F85-4F08-8B00-F0E2397FB6C7}"
+ProjectSection(SolutionItems) = preProject
+	.env = .env
+	Create-DockerfileSolutionRestore.ps1 = Create-DockerfileSolutionRestore.ps1
+	NuGet.config = NuGet.config
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-compose", "docker-compose.dcproj", "{7602111A-737A-4652-B6BE-C85EBD3A7C89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{18B06247-6113-4921-9DFA-35AC7EF93978}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{040A2FC6-D9FC-48FE-BC16-E9BF0B449C4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C9B19440-CC03-44A4-B8B9-9CB55339E3D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContractInteractionService", "ContractInteractionService", "{EA39FDC0-9FF9-452B-9D1A-FFF1FE08CE4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ErrorHandlingService", "ErrorHandlingService", "{7329D40E-9811-43F9-90C8-063D94D79EE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IPFSProcessingService", "IPFSProcessingService", "{7F15A77E-FEDA-4FE4-AAE8-D19482BA23FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MetadataProcessingService", "MetadataProcessingService", "{A0593E99-B167-4F39-BE83-C85FEB20C66E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TokenQueryService", "TokenQueryService", "{88AB3D08-B7EA-459E-B31A-A88EA96FF708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7602111A-737A-4652-B6BE-C85EBD3A7C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7602111A-737A-4652-B6BE-C85EBD3A7C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7602111A-737A-4652-B6BE-C85EBD3A7C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7602111A-737A-4652-B6BE-C85EBD3A7C89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{040A2FC6-D9FC-48FE-BC16-E9BF0B449C4B} = {C9B19440-CC03-44A4-B8B9-9CB55339E3D4}
+		{18B06247-6113-4921-9DFA-35AC7EF93978} = {C9B19440-CC03-44A4-B8B9-9CB55339E3D4}
+		{EA39FDC0-9FF9-452B-9D1A-FFF1FE08CE4E} = {18B06247-6113-4921-9DFA-35AC7EF93978}
+		{7329D40E-9811-43F9-90C8-063D94D79EE3} = {18B06247-6113-4921-9DFA-35AC7EF93978}
+		{7F15A77E-FEDA-4FE4-AAE8-D19482BA23FE} = {18B06247-6113-4921-9DFA-35AC7EF93978}
+		{A0593E99-B167-4F39-BE83-C85FEB20C66E} = {18B06247-6113-4921-9DFA-35AC7EF93978}
+		{88AB3D08-B7EA-459E-B31A-A88EA96FF708} = {18B06247-6113-4921-9DFA-35AC7EF93978}
+	EndGlobalSection
+EndGlobal
