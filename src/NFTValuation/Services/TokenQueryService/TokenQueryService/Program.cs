@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Nethereum.Web3;
 using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
 using TokenQueryService.Middlewares;
@@ -49,6 +50,10 @@ try
 
     builder.Services.AddLoggingBehavior();
     builder.Services.AddValidatorBehavior();
+    
+    //ToDo: Move to config Key
+    builder.Services.AddSingleton(sp => new Web3("https://mainnet.infura.io/v3/{KEY}"));
+
     
     var app = builder.Build();
 
